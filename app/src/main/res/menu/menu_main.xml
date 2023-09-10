@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.lab5.MainActivity">
+    <item
+        android:id="@+id/searchItem"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_search"
+        android:title="Search"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/addContactItem"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_contact"
+        android:title="@string/add_contact"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/nothing"
+        android:orderInCategory="100"
+        android:title=""
+        app:showAsAction="never" />
+
+</menu>

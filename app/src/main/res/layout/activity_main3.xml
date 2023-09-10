@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity3">
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="40dp"
+        android:backgroundTint="#00FFFFFF"
+        android:gravity="center"
+        android:onClick="back"
+        android:padding="5dp"
+        android:src="@mipmap/ic_back"
+        android:text="Back "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.213" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="332dp"
+        android:layout_height="170dp"
+        android:layout_below="@+id/backBtn"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="5dp"
+        android:src="@mipmap/ic_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="294dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="4dp"
+            android:text="Name :  "
+            android:textColor="#E4D9D9"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="17dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Hello"
+            android:textColor="#2DAA85"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin2"
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="294dp"
+            android:id="@+id/emayl"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+
+                android:text="Email :     "
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/emailAddress"
+                android:textSize="15dp"
+                android:text="helloo"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/aa"
+    android:layout_below="@id/lin2">
+
+    <TextView
+        android:id="@+id/numberText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin2"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif"
+        android:text="TextView"
+        android:textColor="#FF0008"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lin2" />
+
+    <ImageButton
+        android:background="#00C6C6C6"
+        android:src="@mipmap/ic_useredit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="70dp"
+        android:onClick="edit"/>
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aa"
+        android:layout_alignEnd="@+id/lin2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="42dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/callBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="call"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="19dp"
+
+            android:layout_marginBottom="10sp"
+            android:background="#00060000"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:src="@mipmap/ic_call"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numberText"
+            app:layout_constraintVertical_bias="0.213"
+            tools:ignore="UsingOnClickInXml" />
+
+        <ImageButton
+            android:id="@+id/deleteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="19dp"
+            android:layout_marginBottom="10sp"
+            android:background="#00060000"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:onClick="delete"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:src="@mipmap/ic_removee"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numberText"
+            app:layout_constraintVertical_bias="0.213"
+            tools:ignore="UsingOnClickInXml" />
+    </LinearLayout>
+
+</RelativeLayout>
